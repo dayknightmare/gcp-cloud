@@ -3,8 +3,8 @@ Description=GCP DEMO APP
 After=network.target
 
 [Service]
-User=$USER
-Group=$USER
+User=root
+Group=root
 WorkingDirectory=/var/www/gcp-cloud
 ExecStart=/var/www/gcp-cloud/env/bin/gunicorn --bind 0.0.0.0:80 main:app -w 5 -k uvicorn.workers.UvicornWorker
 
