@@ -1,0 +1,5 @@
+apt install -y --no-install-recommends curl git make
+mkdir /var/www/
+mkdir /var/www/gcp-cloud/
+git clone https://github.com/dayknightmare/gcp-cloud.git /var/www/gcp-cloud/
+cd /var/www/gcp-cloud/ && make install
